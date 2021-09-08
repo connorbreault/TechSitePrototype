@@ -1,0 +1,7 @@
+#home {
+  margin-left: 100px;
+}
+
+/* =========== OVER 800px ========== */
+@media only screen and (min-width: 825px) {
+}
