@@ -23,20 +23,40 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
 
+    <!-- LottieFiles -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>TechSite</title>
   </head>
 
   <body>
-    <nav style="background: none" class="z-depth-0">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo cyan-text lighten-1 left">Logo</a>
-        <ul id="nav-mobile" class="right">
-          <li><a href="index.html" class="cyan-text lighten-1">Home</a></li>
-          <li><a href="about.html" class="cyan-text lighten-1">About Us</a></li>
-        </ul>
+    <div class="bg">
+      <nav style="background: none" class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo left">Logo</a>
+          <ul id="nav-mobile" class="right">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col s12 l6">
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_y9qOnk.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="col s12 l6">
+          <h1 class="cyan-text">Contact info</h1>
+        </div>
       </div>
-    </nav>
-    <h1>Contact</h1>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/logic.js"></script>
   </body>

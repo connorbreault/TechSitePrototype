@@ -1,7 +1,29 @@
-#home {
-  margin-left: 100px;
+.bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    37deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 47, 54, 1) 27%,
+    rgba(109, 174, 219, 1) 100%
+  );
+}
+.brand-logo {
+  margin-left: 5px;
+}
+.navLinks {
+  margin-right: 5px;
+}
+.brandName {
+}
+.brandSlogan {
 }
 
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
+  .brand-logo {
+    margin-left: 20px;
+  }
+  .navLinks {
+    margin-right: 20px;
+  }
 }
