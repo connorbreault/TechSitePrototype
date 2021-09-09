@@ -1,3 +1,15 @@
+/* Background gradient */
+.bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    37deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 47, 54, 1) 27%,
+    rgba(109, 174, 219, 1) 100%
+  );
+  padding-bottom: 20px;
+}
+
 /* NavBar */
 .brand-logo {
   margin-left: 5px;
@@ -11,19 +23,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Page Background */
-.bg {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    37deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(41, 47, 54, 1) 27%,
-    rgba(109, 174, 219, 1) 100%
-  );
-  padding-bottom: 15px;
-}
-
-/* Page content */
+/* Home Page */
 .welcome {
   font-size: 75px;
   font-family: "Cookie", cursive;
@@ -39,22 +39,55 @@
   margin: 0px 10px 0px 10px;
 }
 
+/* About Page */
+.aboutUsHeader {
+  font-size: 15px;
+}
+.aboutUsDiv {
+  background-color: black;
+}
+.aboutUsText {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+.carouselDiv {
+  margin-bottom: 50px;
+}
+.carousel-item {
+  border-radius: 100px;
+}
+ion-icon {
+  font-size: 40px;
+}
+
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
   /* NavBar */
   .brand-logo {
-    margin-left: 25px;
+    margin-left: 45px;
     font-size: 45px !important;
   }
   .navLinks {
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
-  /* Page content */
+  /* Home Page */
   .welcome {
     margin-left: 0px;
   }
   .brandSlogan {
     font-size: 35px;
+  }
+
+  /* About Page */
+  .aboutLottie {
+    height: 400px;
+  }
+  .aboutUsText {
+    margin: 0px 200px;
+  }
+  .iconRow {
+    width: 25%;
   }
 }
