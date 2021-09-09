@@ -1,3 +1,17 @@
+/* NavBar */
+.brand-logo {
+  margin-left: 5px;
+  font-family: "Cookie", cursive;
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f3fcf0;
+}
+.navLinks {
+  margin-right: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Page Background */
 .bg {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -6,24 +20,41 @@
     rgba(41, 47, 54, 1) 27%,
     rgba(109, 174, 219, 1) 100%
   );
+  padding-bottom: 15px;
 }
-.brand-logo {
-  margin-left: 5px;
-}
-.navLinks {
-  margin-right: 5px;
-}
-.brandName {
+
+/* Page content */
+.welcome {
+  font-size: 75px;
+  font-family: "Cookie", cursive;
+  margin-left: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f3fcf0;
+  text-shadow: 2px 2px 2px #6daedb;
 }
 .brandSlogan {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  text-shadow: 2px 2px 10px #6daedb;
+  margin: 0px 10px 0px 10px;
 }
 
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
+  /* NavBar */
   .brand-logo {
-    margin-left: 20px;
+    margin-left: 25px;
+    font-size: 45px !important;
   }
   .navLinks {
     margin-right: 20px;
+  }
+
+  /* Page content */
+  .welcome {
+    margin-left: 0px;
+  }
+  .brandSlogan {
+    font-size: 35px;
   }
 }
