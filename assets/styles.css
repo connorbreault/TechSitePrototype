@@ -9,6 +9,9 @@
   );
   padding-bottom: 20px;
 }
+.hidden {
+  display: none;
+}
 
 /* NavBar */
 .brand-logo {
@@ -41,7 +44,8 @@
 
 /* About Page */
 .aboutUsHeader {
-  font-size: 15px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 .aboutUsDiv {
   background-color: black;
@@ -59,6 +63,23 @@
 }
 ion-icon {
   font-size: 40px;
+}
+
+/* Contact page */
+.contactLottie {
+  height: 100vh;
+}
+.contactDiv {
+  height: 100vh;
+}
+.contactHeader {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.contactText {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 8px #6daedb;
 }
 
 /* =========== OVER 800px ========== */
@@ -89,5 +110,11 @@ ion-icon {
   }
   .iconRow {
     width: 25%;
+  }
+
+  /* Contact Page */
+  .contactDiv {
+    width: 50%;
+    margin: auto;
   }
 }
