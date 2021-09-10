@@ -1,13 +1,14 @@
 $(document).ready(function () {
+  // Materialize functions
   $(".carousel").carousel();
 });
-
+// Contact page lottie functions
 const player = document.querySelector("lottie-player");
 player.addEventListener("complete", () => {
   $(".contactLottie").addClass("hidden");
   $(".contactDiv").removeClass("hidden");
 });
-
+// Submit message functions
 $("#submitMessageButton").on("click", function () {
   var messageName = $("#name").val().trim();
   var messageEmail = $("#email").val().trim();
@@ -28,17 +29,17 @@ $("#submitMessageButton").on("click", function () {
     };
     console.log(templateParams);
 
-    //   emailjs.send("default_service", "TEMPLATE HERE", templateParams).then(
-    //     function (response) {
-    //       console.log("Sucessful message send!");
-    //       $(".loadingGif").addClass("hidden");
-    //       $("#thanksMessage").removeClass("hidden");
-    //     },
-    //     function (error) {
-    //       console.log("FAILED...", error);
-    //       $(".loadingGif").addClass("hidden");
-    //       $("#errorMessage").removeClass("hidden");
-    //     }
-    //   );
+    emailjs.send("default_service", "template_5MmNhXRS", templateParams).then(
+      function (response) {
+        console.log("Sucessful message send!");
+        $(".loadingGif").addClass("hidden");
+        $("#thanksMessage").removeClass("hidden");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        $(".loadingGif").addClass("hidden");
+        $("#errorMessage").removeClass("hidden");
+      }
+    );
   }
 });
