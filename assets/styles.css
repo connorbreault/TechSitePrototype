@@ -82,6 +82,20 @@ ion-icon {
   text-shadow: 2px 2px 8px #6daedb;
 }
 
+.thanksMessage,
+.errorMessage,
+.loadingGif {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+.responseMessage {
+  margin-top: 75px;
+}
+.responseIcon {
+  font-size: 40px;
+}
+
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
   /* NavBar */

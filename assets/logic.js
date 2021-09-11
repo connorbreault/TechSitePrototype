@@ -33,12 +33,12 @@ $("#submitMessageButton").on("click", function () {
       function (response) {
         console.log("Sucessful message send!");
         $(".loadingGif").addClass("hidden");
-        $("#thanksMessage").removeClass("hidden");
+        $(".thanksMessage").removeClass("hidden");
       },
       function (error) {
         console.log("FAILED...", error);
         $(".loadingGif").addClass("hidden");
-        $("#errorMessage").removeClass("hidden");
+        $(".errorMessage").removeClass("hidden");
       }
     );
   }

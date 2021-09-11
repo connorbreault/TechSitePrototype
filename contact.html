@@ -29,7 +29,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital@1&family=Raleway&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital@1&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -61,97 +64,93 @@
           <div class="navLinks">
             <ul id="nav-mobile" class="right">
               <li><a href="index.html">Home</a></li>
-              <li>
-                <a href="about.html">About Us</a>
-              </li>
+              <li><a href="about.html">About Us</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="contactLottie">
-          <lottie-player
-            src="https://assets10.lottiefiles.com/packages/lf20_y9qOnk.json"
-            background="transparent"
-            speed=".8"
-            style="width: 100%; height: 100%"
-            id="lottie"
-            autoplay
-          ></lottie-player>
-        </div>
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_y9qOnk.json"
+          background="transparent"
+          speed=".8"
+          style="width: 100%; height: 100%"
+          id="lottie"
+          autoplay
+        >
+        </lottie-player>
+      </div>
 
-        <!-- ContactDiv -->
-        <div class="contactDiv hidden">
-          <h1 class="contactHeader center cyan-text">Contact</h1>
-          <h4 class="contactText center white-text">Leave us a message</h4>
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix cyan-text">account_circle</i>
-              <input id="name" type="text" class="white-text input" />
-              <label for="name" class="white-text">Name</label>
-            </div>
-          </div>
+      <!-- ContactDiv -->
+      <div class="contactDiv hidden">
+        <h1 class="contactHeader center cyan-text">Contact</h1>
+        <h4 class="contactText center white-text">Leave us a message</h4>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix cyan-text">email</i>
-              <input id="email" type="email" class="white-text input" />
-              <label for="email" class="white-text">Email</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix cyan-text">message</i>
-              <textarea
-                id="message"
-                class="materialize-textarea validate white-text input"
-              ></textarea>
-              <label for="message" class="white-text">Message</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col s12 center">
-              <button
-                class="waves-effect waves-dark cyan white-text btn"
-                id="submitMessageButton"
-                type="submit"
-                name="action"
-              >
-                Message Me
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </div>
-
-          <div class="loadingGif hidden">
-            <div class="center-align">
-              <lottie-player
-                src="https://assets5.lottiefiles.com/private_files/lf30_xiu4XR.json"
-                background="rgba(0, 0, 0, 0)"
-                speed="1"
-                style="width: 200px; height: 200px; margin: auto"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-          </div>
-
-          <div id="thanksMessage" class="hidden center">
-            <hr class="lineBreak" />
-            <i class="fas fa-check followIcon"></i>
-            <h2>Your message was sent.</h2>
-            <h3>I'll get back to you soon!</h3>
-          </div>
-
-          <div id="errorMessage" class="hidden center">
-            <hr class="lineBreak" />
-            <i class="fas fa-exclamation-triangle red-text followIcon"></i>
-            <h1 class="red-text">Error!</h1>
-            <h2>Your message did not go through.</h2>
-            <h3>Please and try again</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix cyan-text">account_circle</i>
+            <input id="name" type="text" class="white-text input" />
+            <label for="name" class="white-text">Name</label>
           </div>
         </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix cyan-text">email</i>
+            <input id="email" type="email" class="white-text input" />
+            <label for="email" class="white-text">Email</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix cyan-text">message</i>
+            <textarea
+              id="message"
+              class="materialize-textarea validate white-text input"
+            ></textarea>
+            <label for="message" class="white-text">Message</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 center">
+            <button
+              class="waves-effect waves-dark cyan white-text btn"
+              id="submitMessageButton"
+              type="submit"
+              name="action"
+            >
+              Message Us
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="loadingGif hidden">
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_ws0o46jq.json"
+          background="rgba(0, 0, 0, 0)"
+          speed="1"
+          style="width: 100%; height: 100%"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="hidden center thanksMessage responseMessage">
+        <i class="fas fa-check responseIcon green-text"></i>
+        <h2 class="cyan-text contactHeader">Your message was sent.</h2>
+        <h5 class="white-text contactText">We'll get back to you soon!</h5>
+      </div>
+
+      <div class="hidden center errorMessage responseMessage">
+        <i class="fas fa-exclamation-triangle red-text responseIcon"></i>
+        <h2 class="cyan-text contactHeader">
+          Your message did not go through.
+        </h2>
+        <h5 class="white-text contactText">Please and try again later</h5>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
