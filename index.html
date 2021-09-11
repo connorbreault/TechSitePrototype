@@ -10,22 +10,17 @@
     <meta name="author" content="Connor Breault" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
     <!--Link to css-->
     <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
-
     <!-- Materialize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-    <!-- LottieFiles -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,13 +28,16 @@
       href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital@1&family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <!-- LottieFiles -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <title>TechSite</title>
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- Background gradient -->
     <div class="bg">
+      <!-- Navbar -->
       <nav class="z-depth-0" style="background: none">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo cyan-text lighten-1 left">TechSite</a>
@@ -56,7 +54,7 @@
         </div>
       </nav>
 
-      <!-- Content grid -->
+      <!-- Large Screen -->
       <div
         class="row valign-wrapper hide-on-med-and-down"
         style="width: 80%; height: 100vh"
@@ -69,7 +67,6 @@
             </h3>
           </div>
         </div>
-
         <div class="lottieDiv col s12">
           <lottie-player
             src="https://assets1.lottiefiles.com/packages/lf20_ti19rptq.json"
@@ -82,6 +79,7 @@
         </div>
       </div>
 
+      <!-- Medium + Small Screen -->
       <div class="hide-on-large-only center">
         <h1 class="welcome brandNameMobile cyan-text lighten-1 left">
           Welcome
@@ -100,7 +98,7 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>

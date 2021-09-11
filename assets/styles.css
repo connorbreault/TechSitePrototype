@@ -1,4 +1,4 @@
-/* Background gradient */
+/* ===== Background gradient ===== */
 .bg {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -13,7 +13,7 @@
   display: none;
 }
 
-/* NavBar */
+/* ===== NavBar ===== */
 .brand-logo {
   margin-left: 5px;
   font-family: "Cookie", cursive;
@@ -26,7 +26,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Home Page */
+/* ===== Home Page ===== */
 .welcome {
   font-size: 75px;
   font-family: "Cookie", cursive;
@@ -42,7 +42,7 @@
   margin: 0px 10px 0px 10px;
 }
 
-/* About Page */
+/* ===== About Page ===== */
 .aboutUsHeader {
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
@@ -65,7 +65,7 @@ ion-icon {
   font-size: 40px;
 }
 
-/* Contact page */
+/* ===== Contact page ===== */
 .contactLottie {
   height: 100vh;
 }
@@ -82,6 +82,7 @@ ion-icon {
   text-shadow: 2px 2px 8px #6daedb;
 }
 
+/* ===== Contact message responses ===== */
 .thanksMessage,
 .errorMessage,
 .loadingGif {
@@ -98,7 +99,7 @@ ion-icon {
 
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
-  /* NavBar */
+  /* ===== NavBar ===== */
   .brand-logo {
     margin-left: 45px;
     font-size: 45px !important;
@@ -107,7 +108,7 @@ ion-icon {
     margin-right: 40px;
   }
 
-  /* Home Page */
+  /* ===== Home Page ===== */
   .welcome {
     margin-left: 0px;
   }
@@ -115,7 +116,7 @@ ion-icon {
     font-size: 35px;
   }
 
-  /* About Page */
+  /* ===== About Page ===== */
   .aboutLottie {
     height: 400px;
   }
@@ -126,7 +127,7 @@ ion-icon {
     width: 25%;
   }
 
-  /* Contact Page */
+  /* ===== Contact Page ===== */
   .contactDiv {
     width: 50%;
     margin: auto;
