@@ -23,6 +23,7 @@
 
     <!--Link to css-->
     <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/fades.css" type="text/css" />
     <!-- Materialize -->
     <link
       rel="stylesheet"
@@ -85,47 +86,55 @@
 
       <!-- Contact inputs -->
       <div class="contactDiv hidden">
-        <h1 class="contactHeader center cyan-text">Contact</h1>
-        <h4 class="contactText center white-text">Leave us a message</h4>
+        <h1 class="contactHeader center cyan-text animate headerFadeIn fadeIn">
+          Contact
+        </h1>
+        <h4
+          class="contactText center white-text animate messageFadeIn fadeInLeft"
+        >
+          Leave us a message
+        </h4>
 
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix cyan-text">account_circle</i>
-            <input id="name" type="text" class="white-text input" />
-            <label for="name" class="white-text">Name</label>
+        <div class="animate inputFadeIn fadeIn">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix cyan-text">account_circle</i>
+              <input id="name" type="text" class="white-text input" />
+              <label for="name" class="white-text">Name</label>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix cyan-text">email</i>
-            <input id="email" type="email" class="white-text input" />
-            <label for="email" class="white-text">Email</label>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix cyan-text">email</i>
+              <input id="email" type="email" class="white-text input" />
+              <label for="email" class="white-text">Email</label>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix cyan-text">message</i>
-            <textarea
-              id="message"
-              class="materialize-textarea validate white-text input"
-            ></textarea>
-            <label for="message" class="white-text">Message</label>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix cyan-text">message</i>
+              <textarea
+                id="message"
+                class="materialize-textarea validate white-text input"
+              ></textarea>
+              <label for="message" class="white-text">Message</label>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col s12 center">
-            <button
-              class="waves-effect waves-dark cyan white-text btn"
-              id="submitMessageButton"
-              type="submit"
-              name="action"
-            >
-              Message Us
-              <i class="material-icons right">send</i>
-            </button>
+          <div class="row">
+            <div class="col s12 center">
+              <button
+                class="waves-effect waves-dark cyan white-text btn"
+                id="submitMessageButton"
+                type="submit"
+                name="action"
+              >
+                Message Us
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
           </div>
         </div>
       </div>

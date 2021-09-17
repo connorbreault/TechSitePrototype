@@ -15,6 +15,7 @@
 
     <!--Link to css-->
     <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/fades.css" type="text/css" />
     <!-- Materialize -->
     <link
       rel="stylesheet"
@@ -61,8 +62,10 @@
       >
         <div class="contentDiv col s12">
           <div>
-            <h1 class="welcome cyan-text lighten-1">Welcome</h1>
-            <h3 class="brandSlogan white-text">
+            <h1 class="welcome cyan-text lighten-1 animate headerFadeIn fadeIn">
+              Welcome
+            </h1>
+            <h3 class="brandSlogan white-text animate textFadeIn fadeInLeft">
               Cool brand slogan about the future and technology and stuff
             </h3>
           </div>
@@ -81,7 +84,9 @@
 
       <!-- Medium + Small Screen -->
       <div class="hide-on-large-only center">
-        <h1 class="welcome brandNameMobile cyan-text lighten-1 left">
+        <h1
+          class="welcome cyan-text lighten-1 left animate headerFadeIn fadeIn"
+        >
           Welcome
         </h1>
         <lottie-player
@@ -92,7 +97,7 @@
           loop
           autoplay
         ></lottie-player>
-        <h3 class="brandSlogan white-text">
+        <h3 class="brandSlogan white-text animate textFadeIn fadeInLeft">
           Cool brand slogan about the future and technology and stuff
         </h3>
       </div>
